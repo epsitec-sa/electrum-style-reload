@@ -32,7 +32,8 @@ function triggerChromeReload () {
 export function init () {
   stylesheets = {};
   const links = document.getElementsByTagName ('link');
-  for (let link of links) {
+  for (let i = 0; i < links.length; i++) {
+    const link = links[i];
     if (link.rel === 'stylesheet') {
       var href = parseUri (link.href).path;
       stylesheets[href] = {link: link, href: link.href};
