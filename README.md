@@ -4,3 +4,13 @@
 
 Utility functions to reload CSS given their URL.
 
+```javascript
+import {init, reload} from 'electrum-style-reload';
+
+// Initialize the reloader; call this after the page was loaded.
+init ();
+
+// Force the browser to reload the specified CSS; this will only
+// work if the URL matches an already loaded CSS.
+reload ('http://my-site.com/foo.css');
+```
