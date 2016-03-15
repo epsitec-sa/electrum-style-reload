@@ -1,6 +1,6 @@
 {
   "name": "electrum-style-reload",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Reload CSS style sheet.",
   "main": "lib/index.js",
   "repository": {
@@ -8,7 +8,9 @@
     "url": "https://github.com/epsitec-sa/electrum-style-reload"
   },
   "scripts": {
-    "compile": "rimraf ./lib && babel -d lib src",
+    "babel": "babel --quiet --out-dir lib src",
+    "clean": "rimraf ./lib",
+    "compile": "npm run clean && npm run babel",
     "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,12 +18,8 @@
   "license": "MIT",
   "homepage": "https://github.com/epsitec-sa/electrum-style-reload",
   "devDependencies": {
-    "babel-cli": "^6.4.0",
-    "babel-core": "^6.4.0",
-    "babel-loader": "^6.2.1",
-    "babel-preset-es2015": "^6.2.4",
-    "babel-preset-stage-0": "^6.2.4",
-    "rimraf": "^2.5.0",
-    "webpack": "^1.12.11"
+    "babel-env": "^1.1.0",
+    "generic-js-env": "^1.1.0",
+    "rimraf": "^2.5.2"
   }
 }
