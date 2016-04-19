@@ -1,6 +1,6 @@
 {
   "name": "electrum-style-reload",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Reload CSS style sheet.",
   "main": "lib/index.js",
   "repository": {
@@ -18,8 +18,8 @@
   "license": "MIT",
   "homepage": "https://github.com/epsitec-sa/electrum-style-reload",
   "devDependencies": {
-    "babel-env": "^1.1.0",
-    "generic-js-env": "^1.1.0",
+    "babel-env": "^1.2.2",
+    "generic-js-env": "^1.3.2",
     "rimraf": "^2.5.2"
   }
 }
